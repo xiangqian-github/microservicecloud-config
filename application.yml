@@ -1,17 +1,17 @@
 spring: 
-    profiles: 
-        active:
-           - dev
+  profiles: 
+    active: 
+    - dev
 ---
 spring:
-	# 开发环境
-    profiles: dev
-    application:
-        name: microservicecloud-config-XXX-dev
+  # 开发环境
+  profiles: dev
+  application: 
+    name: microservicecloud-config-XXX-dev
 ---
 spring:
-    # 测试环境
-	profiles: test
-    application:
-        name: microservicecloud-config-XXX-test
+  # 测试环境
+  profiles: test
+  application: 
+    name: microservicecloud-config-XXX-test
 # save as UTF-8
