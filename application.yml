@@ -8,7 +8,7 @@ spring:
   # 开发环境
   profiles: dev
   application: 
-    name: microservicecloud-config-server-dev8201
+    name: microservicecloud-config-client-dev8201
 server: 
   port: 8201
 eureka:
@@ -21,7 +21,7 @@ spring:
   # 测试环境
   profiles: test
   application: 
-    name: microservicecloud-config-server-test8202
+    name: microservicecloud-config-client-test8202
 server: 
   port: 8202
 eureka:
