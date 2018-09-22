@@ -1,3 +1,4 @@
+# save as UTF-8
 spring: 
   profiles: 
     active: 
@@ -7,11 +8,23 @@ spring:
   # 开发环境
   profiles: dev
   application: 
-    name: microservicecloud-config-XXX-dev
+    name: microservicecloud-config-server-dev8201
+server: 
+  port: 8201
+eureka:
+  client: 
+    service-url: 
+     defaultZone: http://eureka-server7001.com:7001/eureka/      
+
 ---
 spring:
   # 测试环境
   profiles: test
   application: 
-    name: microservicecloud-config-XXX-test
-# save as UTF-8
+    name: microservicecloud-config-server-test8202
+server: 
+  port: 8202
+eureka:
+  client: 
+    service-url: 
+     defaultZone: http://eureka-server7002.com:7002/eureka/
